@@ -48,3 +48,10 @@ suites:
       inspec_tests:
         - test/integration/default
     attributes:
+  - name: node3
+    run_list:
+      - recipe[create_your_nodes::default]
+    verifier:
+      inspec_tests:
+        - test/integration/default
+    attributes:
